@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Custom Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 id="title">Golden Gate Sauce Co. Survey Form</h1>
+            <p id="description">Thank you for taking the time to help grow our business and create a better product for you</p>
+
+            <form action="" id="survey-form">
+                <fieldset class="info">
+                    <legend>Please Enter Your Information</legend>
+                    <label for="name" id="name-label">Name: 
+                        <input type="text" id="name" placeholder="Please enter your name" required>
+                    </label>
+                    <label for="email" id="email-label">Email: 
+                        <input type="email" id="email" placeholder="Please enter your email" required>
+                    </label>
+                    <label for="age" id="number-label">Age: 
+                        <input type="number" id="age" placeholder="Please enter age" required min="13" max="120">
+                    </label>
+                </fieldset>
+
+                <fieldset class="questions">
+                    <legend>Please answer the following questions:</legend>
+
+                    <label for="dropdown">Select the type of sauces you buy the most often?</label>
+                        <select name="dropdown" id="dropdown">
+                            <option value="">(seclect one)</option>
+                            <option value="1">Hot Sauce</option>
+                            <option value="2">BBQ Sauce</option>
+                            <option value="3">Wing Sauce</option>
+                            <option value="4">Marinades</option>
+                            <option value="5">Salad Dressing</option>
+                            <option value="6">Dipping Sauce</option>
+                        </select>
+
+                    <br>
+
+                    <label>Select how often your purchase sauce products?</label>
+                    <div class="radio-group">
+                        <label for="radio">Weekly<input type="radio" id="radio" name="purchase" checked></label>
+                        <label for="radio">Monthly<input type="radio" id="radio" name="purchase"></label>
+                        <label for="radio">Rarely<input type="radio" id="radio" name="purchase"></label>
+                    </div>
+
+                    <br>
+
+                    <label>What flavor profiles do you enjoy? (Select all that apply):</label>
+                    <div class="checkbox-group">
+                        <label for="checkbox">Sweet<input type="checkbox" id="checkbox" name="flavor" value="flavor"></label>
+                        <label for="checkbox">Spicy<input type="checkbox" id="checkbox" name="flavor" value="flavor"></label>
+                        <label for="checkbox">Tangy<input type="checkbox" id="checkbox" name="flavor" value="flavor"></label>
+                        <label for="checkbox">Smoky<input type="checkbox" id="checkbox" name="flavor" value="flavor"></label>
+                        <label for="checkbox">Savory<input type="checkbox" id="checkbox" name="flavor" value="flavor"></label>
+                        <label for="checkbox">Umami<input type="checkbox" id="checkbox" name="flavor" value="flavor"></label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Please let us know what type of sauces are missing out there?</legend>
+                    <textarea name="message" id="message" placeholder="Let us know what's missing in the sauce world..." rows="3" cols="30"></textarea>
+                </fieldset>
+                
+                <input type="submit" id="submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
